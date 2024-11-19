@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../static/css/styles.css">
     <title>Medserv - Innovación en Endoscopía</title>
-    <link rel="icon" href="{% static 'img/MedservIcon.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'img/MedservLogo.png' %}" type="image/x-icon">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -56,23 +56,34 @@
                 </div>
                 <div class="col">
                     <h4 class="text-light"><strong>Endoscopía con Realidad Mixta</strong></h1>
-                    <p class="text-light"><i>Innovación y precisión al servicio de tu salud</i></p>
+                        <p class="text-light"><i>Innovación y precisión al servicio de tu salud</i></p>
                 </div>
 
             </div>
-        </div>  
+        </div>
     </section>
 
     <div class="container-fluid">
         <section id="nosotros" class="my-5">
             <h1 class="text-center my-5">¿Quiénes somos?</h1>
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-6 d-flex align-items-center">
-                        <p>Somos Medserv, una empresa líder en soluciones médicas avanzadas. Especializados en procedimientos endoscópicos, utilizamos tecnología de realidad mixta para ofrecer diagnósticos y tratamientos precisos, mejorando la experiencia del paciente y los resultados médicos. Nuestro equipo combina innovación tecnológica y excelencia clínica para redefinir los estándares de la medicina moderna.</p>
+                    <div class="col-sm-6 d-flex align-items-center text-center shadow">
+                        <p><i><strong>
+                            Somos Medserv, una empresa líder en soluciones médicas avanzadas. Especializados en
+                            procedimientos endoscópicos, utilizamos tecnología de realidad mixta para ofrecer
+                            diagnósticos y tratamientos precisos, mejorando la experiencia del paciente y los resultados
+                            médicos. Nuestro equipo combina innovación tecnológica y excelencia clínica para redefinir
+                            los estándares de la medicina moderna.
+                            
+                        </strong></i></p>
                     </div>
-                    <div class="col-md-6">
-                        <img src="{% static 'img/NosotrosMedserv.jpg' %}" class="img-fluid rounded" alt="Equipo Medserv">
+                    <div class="col-sm-6 d-flex align-items-center shadow">
+                        <iframe width="100%" height="300px"
+                            src="https://www.youtube.com/embed/22qHZZeQ2hc?si=d0sDd_lN0UE9KZ2Y"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -80,60 +91,77 @@
 
         <section id="servicios" class="my-5">
             <h1 class="text-center my-5">Servicios</h1>
-            <div class="container">
-                <div class="row row-cols-1 row-cols-md-2 g-4">
-                    <div class="col-md-4">
+            <div class="container-fluid">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
                         <div class="card text-center h-100">
-                            <img src="{% static 'img/Endoscopia.jpg' %}" class="card-img-top" alt="Endoscopia">
+                            <img src="{% static 'img/Media1.svg' %}" class="card-img-top custom-img" alt="Endoscopia">
                             <div class="card-body">
                                 <h5 class="card-title">Endoscopía Avanzada</h5>
-                                <p class="card-text">Procedimientos endoscópicos de precisión asistidos con tecnología de realidad mixta para diagnósticos más rápidos y efectivos.</p>
+                                <p class="card-text">Procedimientos endoscópicos de precisión asistidos con tecnología
+                                    de realidad mixta para diagnósticos más rápidos y efectivos.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col">
                         <div class="card text-center h-100">
-                            <img src="{% static 'img/CapacitacionMedica.jpg' %}" class="card-img-top" alt="Capacitación Médica">
+                            <img src="{% static 'img/Media2.svg' %}" class="card-img-top custom-img" alt="Capacitación Médica">
                             <div class="card-body">
                                 <h5 class="card-title">Capacitación Médica</h5>
-                                <p class="card-text">Entrenamiento para profesionales de la salud con simuladores de realidad aumentada, mejorando la práctica clínica.</p>
+                                <p class="card-text">Entrenamiento para profesionales de la salud con simuladores de
+                                    realidad aumentada, mejorando la práctica clínica.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col">
                         <div class="card text-center h-100">
-                            <img src="{% static 'img/Diagnostico.jpg' %}" class="card-img-top" alt="Diagnóstico">
+                            <img src="{% static 'img/Media3.svg' %}" class="card-img-top custom-img" alt="Diagnóstico">
                             <div class="card-body">
                                 <h5 class="card-title">Diagnósticos Avanzados</h5>
-                                <p class="card-text">Análisis detallados y personalizados gracias a la integración de modelos 3D y visualizaciones interactivas.</p>
+                                <p class="card-text">Análisis detallados y personalizados gracias a la integración de
+                                    modelos 3D y visualizaciones interactivas.</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        
+        <style>
+            .card {
+                border: 1px solid #e3e3e3;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+            }
+        
+            .card .card-img-top {
+                height: 150px; /* Ajustar altura para reducir tamaño */
+                width: auto; /* Mantener proporción */
+                object-fit: contain; /* Evitar recortes indeseados */
+                margin-top: 15px; /* Añadir espacio arriba */
+            }
+        
+            .card .card-body {
+                padding: 15px;
+            }
+        
+            .h-100 {
+                height: 100%; /* Garantizar que todas las tarjetas tengan el mismo tamaño */
+            }
+        
+            .row-cols-md-3 .col {
+                display: flex;
+                justify-content: center;
+            }
+        </style>
+        
 
         <section id="contacto" class="my-5">
             <h1 class="text-center my-5">Contacto</h1>
-            <div class="container">
-                <form id="formulario-contacto" class="row g-3">
-                    {% csrf_token %}
-                    <div class="col-md-6">
-                        <label for="nombre" class="form-label">Nombre</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombreCliente" required>
-                    </div>
-                    <div class="col-md-6">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Correo electrónico" name="correoElectronico" required>
-                    </div>
-                    <div class="col-md-12">
-                        <label for="consulta" class="form-label">Consulta</label>
-                        <textarea class="form-control" id="consulta" name="consulta" placeholder="Escribe tu consulta aquí..." rows="4" required></textarea>
-                    </div>
-                    <div class="col-12">
-                        <button class="btn btn-primary" type="submit">Enviar</button>
-                    </div>
-                </form>
+            <div class="container-fluid">
+                <iframe
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSd_AWi1i8Z8yv2QECUJzbX9WP3LJ2c28iMghWCoT22llD9LBQ/viewform?embedded=true"
+                    width="100%" height="1000px" frameborder="0" marginheight="20" marginwidth="20">Cargando…</iframe>
             </div>
         </section>
     </div>
